@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:fillViewport="true"
+    tools:context="com.pan.coronatracker.Profile">
+
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/personaldetails"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    <TextView
+        android:id="@+id/personaldetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+style="@style/TextAppearance.AppCompat.Headline"
+android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+        <TextView
+            android:id="@+id/Symptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Symptoms"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+            />
+        <TextView
+            android:id="@+id/probabiltiy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfectly healthy ✅"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+            android:textColor="@color/green"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+      />
+
+    </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/hightemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High temperature"
+            android:layout_marginTop="9dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:orientation="horizontal"
+
+            >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_hightemperature" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Temperature in Celsius"
+                android:id="@+id/temperature"
+android:maxLength="3"
+          android:inputType="number"
+                />
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+android:layout_weight="1"
+            >
+
+
+        <CheckBox
+            android:id="@+id/cough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coughing"
+            android:layout_marginTop="9dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_cough" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+
+        >
+
+        <CheckBox
+            android:id="@+id/headache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Headache"
+            android:layout_marginTop="9dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_headache" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+
+            >
+
+        <CheckBox
+            android:id="@+id/shortbreath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short breath"
+            android:layout_marginTop="9dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_shortbreath" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+
+        >
+
+        <CheckBox
+            android:id="@+id/sorethroat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sore throat"
+            android:layout_marginTop="9dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_sorethroat" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/iaminfected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Iam sure Iam infected"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorAccent"
+
+            />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+android:maxLength="30"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:hint="Country" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(Optional) City/Address"
+            android:maxLength="90"
+android:id="@+id/address"
+
+            android:inputType="text"
+
+            tools:listheader="Select your Country"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(Optional) National indentification number"
+            tools:listheader="Select your Country"
+            android:maxLength="20"
+            android:id="@+id/national"
+            android:inputType="number"
+
+            />
+
+        <Button
+            android:id="@+id/Register"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/design_default_color_primary_variant"
+            android:fontFamily="monospace"
+            android:includeFontPadding="true"
+            android:text="Register"
+            android:onClick="submit"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordConfirm" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

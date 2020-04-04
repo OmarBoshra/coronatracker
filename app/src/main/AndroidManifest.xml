@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pan.coronatracker"
+    android:allowBackup="false"
+    android:fullBackupContent="false">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/corona"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/corona"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.pan.coronatracker.Infections"></activity>
+        <activity
+            android:name="com.pan.coronatracker.LoginActivity"
+            android:parentActivityName="com.pan.coronatracker.StartActivity" />
+        <activity android:name="com.pan.coronatracker.Profile" />
+        <activity
+            android:name="com.pan.coronatracker.RegisterActivity"
+            android:parentActivityName="com.pan.coronatracker.StartActivity" />
+        <activity android:name="com.pan.coronatracker.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
