@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Pandemic tracker</string>
+    <string name="iscountry">iscountry</string>
+    <string name="Loading">Loading...</string>
+    <string name="app_name">Pandemic tracker</string>
+    <string name="app_name">Pandemic tracker</string>
 
 
     <string-array name="countries" formatted="false" translatable="false">

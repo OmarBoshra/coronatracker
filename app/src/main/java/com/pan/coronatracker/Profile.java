@@ -335,7 +335,7 @@ public class Profile extends AppCompatActivity {
 
 
                             dialogProgress = new ProgressDialog(Profile.this);
-                            dialogProgress.setMessage("Loading...");
+                            dialogProgress.setMessage(getResources().getString(R.string.Loading));
                             dialogProgress.setCancelable(false);
                             dialogProgress.show();
 

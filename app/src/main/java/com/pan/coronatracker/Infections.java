@@ -56,13 +56,13 @@ public class Infections extends AppCompatActivity implements UsersAdapter.Select
                 SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0);
                 SharedPreferences.Editor editor = pref.edit();
 
-                Boolean isCountry= pref.getBoolean("iscountry",false);
+                Boolean isCountry= pref.getBoolean(getResources().getString(R.string.iscountry),false);
 if(isCountry){
-    editor.putBoolean("iscountry", false);
+    editor.putBoolean(getResources().getString(R.string.iscountry), false);
     search.setQueryHint("Search By country");
     Toast.makeText(Infections.this, "Filter by country", Toast.LENGTH_SHORT).show();
 }else {
-    editor.putBoolean("iscountry", true);
+    editor.putBoolean(getResources().getString(R.string.iscountry), true);
     search.setQueryHint("Search By address");
 
     Toast.makeText(Infections.this, "Filter by address", Toast.LENGTH_SHORT).show();
@@ -94,7 +94,7 @@ if(isCountry){
 
 
         final ProgressDialog dialogProgress = new ProgressDialog(this);
-        dialogProgress.setMessage("Loading...");
+        dialogProgress.setMessage(getResources().getString(R.string.Loading));
         dialogProgress.setCancelable(false);
         dialogProgress.show();
 
